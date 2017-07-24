@@ -1,0 +1,198 @@
+.container.containerfull {
+  padding: 0;
+  min-height: 600px;
+}
+
+.cart-image {
+  display: none;
+}
+
+.dynamicImageContainer {
+  padding: 0;
+}
+
+.dynamicImage {
+  background-color: #fff;
+  width: 100%;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.dynamicImage img {
+  width: 93px;
+  margin: 0 auto 6px;
+  padding: 5px;
+}
+
+.dynamicImage .views-field-title {
+  display: block;
+  text-align: left;
+  float: left;
+  margin: 0 0 10px;
+}
+
+.dynamicImage .views-field-title h1 {
+  margin: 20px 0 0;
+  color: #ad4279;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.dynamicImage .views-field-title p {
+  display: none;
+}
+
+.dynamicImage .views-field-title p:last-child {
+  display: block;
+  color: #ad4279;
+  font-size: 14px;
+  font-weight: 200;
+}
+
+.dynamicImage .views-field-field-product-image {
+  float: left;
+}
+
+/********************************************
+MIN-WIDTH 375PX
+********************************************/
+@media (max-width: 991px) {
+  .dynamicImageContainer .dynamicImage .views-field-field-product-image {
+    width: 100px;
+  }
+  .dynamicImageContainer .dynamicImage .dynamicImage .views-field-title {
+    width: initial;
+  }
+}
+
+/********************************************
+MIN-WIDTH 600PX
+********************************************/
+@media (min-width: 600px) {
+  views-field-title .field-content {
+    color: #626262;
+    text-align: center;
+  }
+  views-field-title .field-content h1 {
+    font-size: 21px;
+  }
+}
+
+/********************************************
+MIN-WIDTH 600PX
+********************************************/
+@media (min-width: 768px) {
+  .dynamicImageContainer {
+    position: absolute;
+    left: 0;
+  }
+  .dynamicImage .views-field-title h1 {
+    font-size: 25px;
+  }
+  .dynamicImage .views-field-title P:last-child {
+    font-size: 18px;
+  }
+}
+
+/********************************************
+MIN-WIDTH 992PX
+********************************************/
+@media (min-width: 992px) {
+  .container.containerfull {
+    padding: 20px;
+    min-height: 600px;
+  }
+  .cart-image {
+    position: relative;
+    z-index: 99;
+    top: -50px;
+    margin: 0 auto -48px auto;
+    padding: 0;
+    display: block;
+    background: url(../../../images/cart-teal-one.png) no-repeat;
+    height: 37px;
+    width: 38px;
+  }
+  .dynamicImageContainer {
+    z-index: 1;
+    margin: -10px 0;
+    position: relative;
+    left: inherit;
+  }
+  .dynamicImage {
+    display: block;
+    font-family: 'Lato', Arial, sans-serif;
+    background: #fff;
+    min-height: 305px;
+    min-width: 227px;
+    width: 250px;
+    position: relative;
+    margin: 34px auto;
+    -webkit-box-shadow: 1px 1px 2px 2px #ccc;
+    box-shadow: 1px 1px 2px 2px #ccc;
+  }
+  .dynamicImage:after {
+    content: "";
+    position: absolute;
+    -webkit-transform: rotate(134deg);
+    -ms-transform: rotate(134deg);
+    transform: rotate(134deg);
+    width: 33px;
+    z-index: -1;
+    top: -18px;
+    left: 103.5px;
+    left: -webkit-calc(50% - 33px);
+    left: calc(50% - 33px);
+    border: 33px solid #fff;
+    -webkit-box-shadow: 0 -1px 5px 0 rgba(0, 0, 0, 0.75);
+    box-shadow: 0 -1px 5px 0 rgba(0, 0, 0, 0.75);
+  }
+  .dynamicImage img {
+    width: 100%;
+  }
+  .dynamicImage .views-field-field-product-image {
+    max-width: 160px;
+    display: block;
+    margin: 0 auto;
+    padding-top: 15px;
+    width: 165px;
+    float: none;
+  }
+  .dynamicImage .views-field-title {
+    width: 100%;
+    clear: both;
+    min-width: 100%;
+  }
+  .dynamicImage .views-field-title .field-content {
+    color: #626262;
+    text-align: center;
+  }
+  .dynamicImage .views-field-title .field-content h1 {
+    margin: 10px 0 5px;
+    font-size: 20px;
+  }
+  .dynamicImage .views-field-title .field-content .highlight {
+    color: #3F8889;
+    font-weight: 700;
+  }
+  .dynamicImage .views-field-title .field-content p {
+    color: #626262;
+    display: block;
+    line-height: 13px;
+  }
+  .dynamicImage .views-field-title .field-content P:last-child {
+    font-size: 14px;
+  }
+  .dynamicImage:before {
+    margin-right: -15px;
+    content: "";
+    border: 33px solid #fff;
+    top: -65px;
+    left: -webkit-calc(50% - 33px);
+    left: calc(50% - 33px);
+    position: absolute;
+    border-right-color: transparent;
+    border-left-color: transparent;
+    border-top-color: transparent;
+  }
+}

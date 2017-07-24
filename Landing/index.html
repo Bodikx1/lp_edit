@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(2),u=e(3),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}finally{f.emit("fn-end",[c.now()],t)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],3:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],4:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=m(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){v[e]=m(e).concat(n)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(t)}function g(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var v={},y={},b={on:l,emit:t,get:w,listeners:m,context:n,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(2),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=h.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+h.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===d.readyState&&i()}function i(){f("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),f=e("handle"),c=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1044.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=n.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),f("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+<meta name="Generator" content="Drupal 8 (https://www.drupal.org)" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+<link rel="shortcut icon" href="https://you.getitfree.us/sites/default/files/favicon_1.ico" type="image/vnd.microsoft.icon" />
+
+      <title>(1) Free Samples | Free Samples - Coupons and other free stuff by mail | Get It Free</title>
+          <style media="all">
+@import url("css/align.module4c30.css?osqmzz");
+@import url("css/fieldgroup.module4c30.css?osqmzz");
+@import url("css/container-inline.module4c30.css?osqmzz");
+@import url("css/clearfix.module4c30.css?osqmzz");
+@import url("css/details.module4c30.css?osqmzz");
+@import url("css/hidden.module4c30.css?osqmzz");
+@import url("css/item-list.module4c30.css?osqmzz");
+@import url("css/js.module4c30.css?osqmzz");
+@import url("css/nowrap.module4c30.css?osqmzz");
+@import url("css/position-container.module4c30.css?osqmzz");
+@import url("css/progress.module4c30.css?osqmzz");
+@import url("css/reset-appearance.module4c30.css?osqmzz");
+@import url("css/resize.module4c30.css?osqmzz");
+@import url("css/sticky-header.module4c30.css?osqmzz");
+@import url("css/tablesort.module4c30.css?osqmzz");
+@import url("css/tree-child.module4c30.css?osqmzz");
+@import url("../core/modules/views/css/views.module4c30.css?osqmzz");
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/bootstrap/3.3.7/css/bootstrap.css" media="all" />
+<style media="all">
+@import url("https://themes/bootstrap/css/3.3.7/overrides.min4c30.css?osqmzz");
+</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,700i,900,900i|Open%20Sans:400,400i,700,700i,800" media="all" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" media="all" />
+<style media="all">
+@import url("../sites/all/themes/getitfree/css/settings/settings4c30.css?osqmzz");
+@import url("../sites/all/themes/getitfree/css/templates/layout/splash4c30.css?osqmzz");
+@import url("../sites/all/themes/getitfree/css/templates/layout/registration4c30.css?osqmzz");
+@import url("../sites/all/themes/getitfree/css/components/Header/header4c30.css?osqmzz");
+@import url("../sites/all/themes/getitfree/css/components/Footer/footer4c30.css?osqmzz");
+@import url("../sites/all/themes/getitfree/css/components/dynamicImage/dynamicImage4c30.css?osqmzz");
+@import url("../sites/all/themes/getitfree/css/components/dynamicGrid/dynamicGrid4c30.css?osqmzz");
+@import url("../sites/all/themes/getitfree/css/components/Survey/survey4c30.css?osqmzz");
+@import url("../sites/all/themes/getitfree/css/components/offers/offers4c30.css?osqmzz");
+@import url("../sites/all/themes/getitfree/css/components/Match/match4c30.css?osqmzz");
+@import url("../sites/all/themes/getitfree/css/modules/views_slideshow/styles4c30.css?osqmzz");
+@import url("../sites/all/themes/getitfree/css/paragraphs/headline_subheadline/headline_subheadline4c30.css?osqmzz");
+@import url("../sites/all/themes/getitfree/css/blocks/dynamic-hero/style4c30.css?osqmzz");
+@import url("../sites/all/themes/getitfree/css/paragraphs/popunder/popunder4c30.css?osqmzz");
+@import url("../sites/all/themes/getitfree/css/childThemes/fall/fall4c30.css?osqmzz");
+@import url("radio-buttons/css/style.css");
+</style>
+
+  </head>
+  <body>
+
+    <div class="layout-container">
+
+
+
+
+
+
+
+
+
+
+
+  <main role="main">
+    <a id="main-content" tabindex="-1"></a>
+    <div class="layout-content">
+          <div class="region region-content">
+      <div class="views-element-container form-group">
+<div class="view view-variation-view-offers-eop view-id-variation_view_offers_eop view-display-id-page_1 js-view-dom-id-354f312c2d0b3e1be2ed40c47b56888490fde95295a11dfa9bd3134908105e0b">
+
+
+
+            <div class="view-content">
+                <div class="views-row">
+    <div class="views-field views-field-field-splash-content"><div class="field-content">
+
+
+<div class="fall splash">
+<article role="article" class="page main-content">
+
+            <div class="field_header"><section id="block-block-contentf75d0d36-1d96-4f95-b568-500be7fbc1dc--3" class="block block-block-content block-block-contentf75d0d36-1d96-4f95-b568-500be7fbc1dc clearfix">
+
+
+
+
+            <div class="body"><header class="header"><img alt="Home" data-entity-type="" data-entity-uuid="" src="../sites/all/themes/getitfree/images/logo.png" /></header>
+</div>
+
+  </section>
+
+</div>
+
+
+  <div>
+
+            <div class="field_popunder"><div class="paragraph paragraph--type--popunder paragraph--view-mode--default">
+
+
+
+<div>
+    <div class="js-popunder" data-popunderurl="https://getitfree.us/popunder"></div>
+</div>
+
+
+</div></div>
+
+      <div class="field_extra_block">
+              <div>
+
+
+<div id="block-block-contente6c89eb6-5488-4e28-a5e4-394605a4a1bd">
+  <div class="hidden-xs col-sm-12 dynamicHero">
+    <div class="col-sm-6 col-md-7 dynImage">
+      <div class="dynamic-image">
+            <div class="field_image_block"><section id="block-views-blockd3skt0-dynamic-image-block-4" class="block block-views block-views-blockd3skt0-dynamic-image-block-4 clearfix">
+
+
+
+      <div class="views-element-container form-group"><div class="view view-d3skt0-dynamic-image view-id-d3skt0_dynamic_image view-display-id-block_4 js-view-dom-id-51214e551ed5fb7e46c782f6d777d02722b3d561023c8069131335830ec64027">
+
+
+
+      <div class="view-content">
+          <div class="views-view-grid horizontal cols-1 clearfix">
+            <div class="views-row clearfix row-1">
+                  <div class="views-col col-1" style="width: 100%;">
+            <div class="views-field views-field-field-product-image"><div class="field-content"><a href="https://you.getitfree.us/F4LLDK/signup?uf=TopPerformers" class="popunder js-nextpage-uf">  <img src="../sites/default/files/styles/large/public/2017-02/TopPerformersc330.png?itok=zFpfq3_-" width="645" height="645" alt="TopPerformers" class="img-responsive" />
+
+
+</a></div></div>
+          </div>
+              </div>
+      </div>
+
+    </div>
+
+          </div>
+</div>
+
+  </section>
+
+</div>
+      </div>
+    </div>
+    <div class="col-sm-7 col-md-6 bgColor">
+      <h1 class="headline page-headline">
+            <div class="field_page_headline"><h1 class="headline page-headline">No costs, just <strong>Free Samples</strong> to <strong>your</strong> mailbox!</h1>
+</div>
+      </h1>
+      <div class="testimonial">
+        <div class="col-sm-5 col-md-4">
+          <span class="testimonial-image">
+            <div class="field_testimonial_image">  <img src="../sites/default/files/2017-04/boxes-pile-no-text.png" width="218" height="100" alt="boxes" class="img-responsive" />
+
+</div>
+      </span>
+        </div>
+        <div class="col-sm-7 col-md-8">
+          <span class="testimonial-heading">
+            <div class="field_testimonial_headline">Our latest batch of free samples has just shipped!</div>
+      </span>
+          <span class="testimonial-text">
+            <div class="field_testimonial_body_text">Sign up and start receiving yours today</div>
+      </span>
+        </div>
+
+            <div class="field_cta_button"><section id="block-views-blockcta-block-2" class="block block-views block-views-blockcta-block-2 clearfix">
+
+
+
+      <div class="views-element-container form-group"><div class="view view-cta view-id-cta view-display-id-block_2 js-view-dom-id-12661034633027af8ed516506408017ace4774f613d1ac91ea16f1d866b62e74">
+
+
+
+      <div class="view-content">
+          <div class="views-view-grid horizontal cols-1 clearfix">
+            <div class="views-row clearfix row-1">
+                  <div class="views-col col-1" style="width: 100%;">
+            <div><span><a href="#" class="popunder button-cta js-nextpage-uf">Get my freebies delivered now</a></span></div>
+          </div>
+              </div>
+      </div>
+
+    </div>
+
+          </div>
+</div>
+
+  </section>
+
+</div>
+
+      </div>
+      <div>
+            <div class="field_fb_like_box"><section id="block-block-contentaaa88559-1ea4-42fc-bebf-668dbcd0136d" class="block block-block-content block-block-contentaaa88559-1ea4-42fc-bebf-668dbcd0136d clearfix">
+
+
+
+
+            <div class="body"><div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "../../connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8&appId=600446703446757";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+<div class="fb-like" data-href="https://www.facebook.com/FreeSamplesAtGetItFree" data-layout="standard" data-action="like" data-size="large" data-show-faces="true" data-share="true"></div></div>
+
+  </section>
+
+</div>
+       </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="hidden-xs col-sm-offset-1 col-sm-10">
+      <div class="social-banner">
+
+            <div class="field_fb_social_banner"><section id="block-block-content7598dc88-4403-4256-b929-282f1dfd03fb" class="block block-block-content block-block-content7598dc88-4403-4256-b929-282f1dfd03fb clearfix">
+
+
+
+
+            <div class="body"><center><img alt="Social Banner" class="img-responsive" data-entity-type="" data-entity-uuid="" src="../sites/all/themes/getitfree/images/fall/fb-banner-fall.png" /></center>
+</div>
+
+  </section>
+
+</div>
+
+      </div>
+    </div>
+  </div>
+</div><!-- container --></div>
+          </div>
+
+    <div class="container container-custom">
+      <div class="row">
+
+            <div class="field_headline_subheadline">
+<div class="row">
+  <div class="col-xs-12">
+    <div class="headline-wrap">
+      <h1 class="headline">
+          These freebies won't last long! One per household
+      </h1>
+      <h2 class="subheadline">
+
+      </h2>
+    </div>
+  </div>
+</div>
+
+</div>
+
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+
+            <div class="field_product_grid"><section id="block-views-blockd3skt0-product-grid-block-1" class="block block-views block-views-blockd3skt0-product-grid-block-1 clearfix">
+
+
+
+      <div class="views-element-container form-group"><div class="productGrid view view-d3skt0-product-grid view-id-d3skt0_product_grid view-display-id-block_1 js-view-dom-id-f9f6ff98f125933d53357da05569d62d1f989a9890c9cce90e4a242c539eb592">
+
+
+        <div class="view-filters form-group">
+      <form class="views-exposed-form" data-drupal-selector="views-exposed-form-d3skt0-product-grid-block-1" action="https://you.getitfree.us/z/RU0003?pid=51525977cd7d10204f000000&amp;vid=595fd94ab12c36073d00d2fe&amp;sid=59744775cd7d10cc1200c1d3&amp;uuid=59744775cd7d10cc1200c1d3&amp;pid=51525977cd7d10204f000000&amp;utm_medium=cpc&amp;utm_content=TopPerformers&amp;utm_source=Google&amp;utm_campaign=DesktopSearchB&amp;utm_term=free+stuff+coupons_b&amp;gclid=EAIaIQobChMI64Sct-ie1QIVTAQqCh0YOQbuEAAYAyAAEgJNzfD_BwE&amp;ptid=59724b1fb12c369a52000d03" method="get" id="views-exposed-form-d3skt0-product-grid-block-1" accept-charset="UTF-8">
+  <div class="form--inline form-inline clearfix">
+  <div class="js-form-item formGroup form-item js-form-type-textfield form-item-utm-content js-form-item-utm-content">
+
+  <label for="edit-utm-content" class="control-label">utm content (field_utm_content)</label>
+        <input data-drupal-selector="edit-utm-content" class="form-text" type="text" id="edit-utm-content" name="utm_content" value="TopPerformers" size="30" maxlength="128" />
+
+
+</div>
+<div data-drupal-selector="edit-actions" class="form-actions form-group js-form-wrapper form-wrapper" id="edit-actions"><input data-drupal-selector="edit-submit-d3skt0-product-grid" class="button js-form-submit form-submit btn-info" type="submit" id="edit-submit-d3skt0-product-grid" value="Apply" name="" />
+</div>
+
+</div>
+
+</form>
+
+    </div>
+
+      <div class="view-content">
+          <div class="views-view-grid horizontal cols-3 clearfix">
+            <div class="dynProductGrid views-row clearfix row-1">
+                  <div class="views-col col-1" style="width: 33.333333333333%;">
+            <div class="views-field views-field-field-product-image-1"><div class="field-content"><a href="https://you.getitfree.us/D3SKT0/signup?uf=TopPerformers" class="js-nextpage-uf popunder">  <img src="../sites/default/files/styles/medium/public/2017-02/TopPerformers9ba1.png?itok=K45xRXG5" width="220" height="220" alt="TopPerformers" class="img-responsive" />
+
+
+</a></div></div><div class="views-field views-field-title-1"><span class="field-content"><h2>Free <span class="feature-flag flag-"></span></h2>
+<p>Free shipping, no cost</p>
+<h3><span class="random-number"></span> samples shipped out</h3>
+<p class="btn-switch1">
+<input type="radio" id="yes1" name="switch1" class="btn-switch1__radio btn-switch1__radio_yes1" />
+<input type="radio" checked id="no1" name="switch1" class="btn-switch1__radio btn-switch1__radio_no1" />
+<label for="yes1" class="btn-switch1__label btn-switch1__label_yes1"><span class="btn-switch1__txt">Oui</span></label>								  <label for="no1" class="btn-switch1__label btn-switch1__label_no1"><span class="btn-switch1__txt">Non</span></label>
+</p></span></div>
+          </div>
+                  <div class="views-col col-2" style="width: 33.333333333333%;">
+            <div class="views-field views-field-field-product-image-1"><div class="field-content"><a href="https://you.getitfree.us/D3SKT0/signup?uf=KitchenAid" class="js-nextpage-uf popunder">  <img src="../sites/default/files/styles/medium/public/2016-12/KitchenAid_02a17.png?itok=vUPsFxeb" width="220" height="220" alt="Kitchen Aid" class="img-responsive" />
+
+
+</a></div></div><div class="views-field views-field-title-1"><span class="field-content"><h2>Free <span class="feature-flag flag-Limited">Limited</span></h2>
+<p>Free shipping, no cost</p>
+<h3><span class="random-number"></span> samples shipped out</h3>
+<p class="btn-switch2">
+<input type="radio" id="yes2" name="switch2" class="btn-switch2__radio btn-switch2__radio_yes2" />
+<input type="radio" checked id="no2" name="switch2" class="btn-switch2__radio btn-switch2__radio_no2" />
+<label for="yes2" class="btn-switch2__label btn-switch2__label_yes2"><span class="btn-switch2__txt">Oui</span></label>								  <label for="no2" class="btn-switch2__label btn-switch2__label_no2"><span class="btn-switch2__txt">Non</span></label>
+</p></span></div>
+          </div>
+                  <div class="views-col col-3" style="width: 33.333333333333%;">
+            <div class="views-field views-field-field-product-image-1"><div class="field-content"><a href="https://you.getitfree.us/D3SKT0/signup?uf=Tide" class="js-nextpage-uf popunder">  <img src="../sites/default/files/styles/medium/public/2016-12/Tide2277.png?itok=YaCEZlfw" width="220" height="220" alt="Tide" class="img-responsive" />
+
+
+</a></div></div><div class="views-field views-field-title-1"><span class="field-content"><h2>Free <span class="feature-flag flag-Popular">Popular</span></h2>
+<p>Free shipping, no cost</p>
+<h3><span class="random-number"></span> samples shipped out</h3>
+<p class="btn-switch3">
+<input type="radio" id="yes3" name="switch3" class="btn-switch3__radio btn-switch3__radio_yes3" />
+<input type="radio" checked id="no3" name="switch3" class="btn-switch3__radio btn-switch3__radio_no3" />
+<label for="yes3" class="btn-switch3__label btn-switch3__label_yes3"><span class="btn-switch3__txt">Oui</span></label>								  <label for="no3" class="btn-switch3__label btn-switch3__label_no3"><span class="btn-switch3__txt">Non</span></label>
+</p></span></div>
+          </div>
+              </div>
+          <div class="dynProductGrid views-row clearfix row-2">
+                  <div class="views-col col-1" style="width: 33.333333333333%;">
+            <div class="views-field views-field-field-product-image-1"><div class="field-content"><a href="https://you.getitfree.us/D3SKT0/signup?uf=Dewalt" class="js-nextpage-uf popunder">  <img src="../sites/default/files/styles/medium/public/2016-12/Dewaltb660.png?itok=_zDgIiIN" width="220" height="220" alt="Dewalt" class="img-responsive" />
+
+
+</a></div></div><div class="views-field views-field-title-1"><span class="field-content"><h2>Free <span class="feature-flag flag-"></span></h2>
+<p>Free shipping, no cost</p>
+<h3><span class="random-number"></span> samples shipped out</h3>
+<p class="btn-switch4">
+<input type="radio" id="yes4" name="switch4" class="btn-switch4__radio btn-switch4__radio_yes4" />
+<input type="radio" checked id="no4" name="switch4" class="btn-switch4__radio btn-switch4__radio_no4" />
+<label for="yes4" class="btn-switch4__label btn-switch4__label_yes4"><span class="btn-switch4__txt">Oui</span></label>								  <label for="no4" class="btn-switch4__label btn-switch4__label_no4"><span class="btn-switch4__txt">Non</span></label>
+</p></span></div>
+          </div>
+                  <div class="views-col col-2" style="width: 33.333333333333%;">
+            <div class="views-field views-field-field-product-image-1"><div class="field-content"><a href="https://you.getitfree.us/D3SKT0/signup?uf=Hanes" class="js-nextpage-uf popunder">  <img src="../sites/default/files/styles/medium/public/2016-12/Hanes_6f2ae.png?itok=LO3wkGJ_" width="220" height="220" alt="Hanes" class="img-responsive" />
+
+
+</a></div></div><div class="views-field views-field-title-1"><span class="field-content"><h2>Free <span class="feature-flag flag-"></span></h2>
+<p>Free shipping, no cost</p>
+<h3><span class="random-number"></span> samples shipped out</h3>
+<p class="btn-switch5">
+<input type="radio" id="yes5" name="switch5" class="btn-switch5__radio btn-switch5__radio_yes5" />
+<input type="radio" checked id="no5" name="switch5" class="btn-switch5__radio btn-switch5__radio_no5" />
+<label for="yes5" class="btn-switch5__label btn-switch5__label_yes5"><span class="btn-switch5__txt">Oui</span></label>								  <label for="no5" class="btn-switch5__label btn-switch5__label_no5"><span class="btn-switch5__txt">Non</span></label>
+</p></span></div>
+          </div>
+                  <div class="views-col col-3" style="width: 33.333333333333%;">
+            <div class="views-field views-field-field-product-image-1"><div class="field-content"><a href="https://you.getitfree.us/D3SKT0/signup?uf=Swiffer" class="js-nextpage-uf popunder">  <img src="../sites/default/files/styles/medium/public/2016-12/Swiffer_0a4ed.png?itok=IRaneqQ3" width="220" height="220" alt="Swiffer" class="img-responsive" />
+
+
+</a></div></div><div class="views-field views-field-title-1"><span class="field-content"><h2>Free <span class="feature-flag flag-"></span></h2>
+<p>Free shipping, no cost</p>
+<h3><span class="random-number"></span> samples shipped out</h3>
+<p class="btn-switch6">
+<input type="radio" id="yes6" name="switch6" class="btn-switch6__radio btn-switch6__radio_yes6" />
+<input type="radio" checked id="no6" name="switch6" class="btn-switch6__radio btn-switch6__radio_no6" />
+<label for="yes6" class="btn-switch6__label btn-switch6__label_yes6"><span class="btn-switch6__txt">Oui</span></label>								  <label for="no6" class="btn-switch6__label btn-switch6__label_no6"><span class="btn-switch6__txt">Non</span></label>
+</p></span></div>
+          </div>
+              </div>
+      </div>
+
+    </div>
+
+          </div>
+</div>
+
+  </section>
+
+</div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</article>
+
+                <div class="sectionStyle5 footer">
+        <div class="container">
+
+            <div class="field_footer"><section id="block-block-content5fb9f56d-a327-417c-b91e-f654dfc13a38--3" class="block block-block-content block-block-content5fb9f56d-a327-417c-b91e-f654dfc13a38 clearfix">
+
+
+
+
+            <div class="body"><ul class="unorderedList">
+	<li class="listItem"><a href="http://www.getitfree.us/privacy" target="_blank">Privacy Policy</a></li>
+</ul>
+
+<p class="text">The third-party product names, logos, brands, and/or trademarks shown on this website are the property of their respective owners and are not affiliated with nor endorse or sponsor GetItFree.</p>
+
+<p class="text2">© 2011-2017 GetItFree.us</p>
+</div>
+
+  </section>
+
+</div>
+
+        </div>
+      </div>
+      </div>
+<script>
+  var field_next_page_url = '';
+</script></div></div><div class="views-field views-field-field-library"><div class="field-content">
+
+</div></div>
+  </div>
+
+        </div>
+
+                        <div class="view-footer">
+            <div class="js-variation-view" data-nextpage="/z/RU0003/signup" data-pagetype="splash" data-pagenumber="1"></div>
+        </div>
+        </div>
+</div>
+
+
+  </div>
+
+    </div>
+
+
+  </main>
+
+
+</div>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/buttons_animation.js"></script>
+</body>
+</html>

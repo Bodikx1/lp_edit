@@ -1,0 +1,59 @@
+.registration_page .mainWrap {
+  background-color: #fff;
+  padding: 25px 30px;
+  margin-top: -1px;
+}
+
+.registration_page .mainWrap form {
+  width: 100%;
+  margin: 0;
+  padding: 20px;
+  min-width: 200px;
+}
+
+.registration_page .mainWrap form .headline {
+  font-size: 21px;
+}
+
+header {
+  height: 0;
+}
+
+footer {
+  padding: 20px 35px;
+  margin: 20px 0 0;
+  background: none;
+  background-color: #91c1c2;
+}
+
+@media (min-width: 600px) {
+  .registration_page .mainWrap {
+    margin-top: 25px;
+    padding: 25px 30px;
+    border-radius: 10px;
+  }
+  .registration_page .mainWrap form {
+    padding: 0;
+  }
+  header {
+    height: 45px;
+  }
+  footer {
+    font-size: 14px;
+    width: 100%;
+    color: #626262;
+    padding: 30px 15px 10px;
+    text-align: center;
+    margin: 26px auto 0;
+    background: url(../../../images/footer-border.png) repeat-x, url(../../../images/dark-bkgd.jpg) 9px 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .registration_page .mainWrap {
+    border-radius: 0;
+    margin: 30px 0 0 0;
+    padding: 20px;
+    border: 3px solid #ccc;
+  }
+}

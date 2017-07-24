@@ -1,0 +1,36 @@
+.field_footer .unorderedList {
+  list-style: none;
+}
+
+.field_footer a {
+  color: black;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.field_footer .text {
+  color: #2e2e2e;
+  font-size: 12.6px;
+  line-height: 16px;
+}
+
+.field_footer .text2 {
+  color: #2e2e2e;
+}
+
+.footerStandard_links {
+  list-style: none;
+  padding: 0;
+  font-weight: 400;
+  margin: 0 auto 10px;
+}
+
+.footerStandard_links .footerStandard_item {
+  display: inline;
+}
+
+.footerStandard_links .footerStandard_item .footerStandard_link {
+  color: #000000;
+  text-decoration: none;
+}

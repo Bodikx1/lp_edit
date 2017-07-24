@@ -1,0 +1,40 @@
+/* Match Page Styles */
+.page-match {
+  background: #ffffff;
+}
+
+.page-match .field_headline {
+  text-align: center;
+  color: #ad4279;
+  font-size: 24px;
+  margin: 10px 0 10px;
+  font-weight: 700;
+}
+
+/* Custom, iPhone Retina */
+#views_slideshow_cycle_teaser_section_product_carousel-block_1 {
+  margin: 0 auto;
+}
+
+#views_slideshow_cycle_main_product_carousel-block_1 {
+  padding: 20px 0 30px;
+}
+
+/* Small Devices, Tablets */
+@media (min-width: 768px) {
+  .page-match {
+    background: #2e2e2e url(../../../images/bg_tablet.jpg) top left;
+  }
+}
+
+/* Medium Devices, Desktops */
+@media (min-width: 992px) {
+  .page-match {
+    background: url(../../../images/bg-grey.jpg) top left #eee;
+  }
+  .page-match .field_headline {
+    font-size: 30px;
+  }
+}
+
+/* Large Devices, Wide Screens */

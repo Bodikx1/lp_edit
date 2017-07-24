@@ -1,0 +1,299 @@
+html {
+  font-size: 20px;
+  font-family: 'Lato', Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+body, .path-frontpage {
+  background: url(../../images/bg-grey.jpg) top left #eee;
+  font-family: 'Lato', Arial, sans-serif;
+}
+
+.page-node-type-registration-page, .page-survey {
+  background: #ffffff;
+  min-width: 300px;
+  margin-top: 0;
+}
+
+.page-node-type-registration-page header, .page-survey header {
+  display: none;
+}
+
+a:focus, a:hover {
+  color: #000000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.ad {
+  background: #fff;
+}
+
+.sectionStyle1 {
+  background: green;
+  padding: 5px 0;
+}
+
+.sectionStyle2 {
+  padding: 20px;
+  background: white;
+}
+
+.sectionStyle3 {
+  border: 3px solid #ccc;
+  padding: 20px 20px;
+  margin: 0 auto;
+  background-color: white;
+  max-width: 800px;
+  min-height: 350px;
+}
+
+.sectionStyle4 {
+  position: relative;
+}
+
+.sectionStyle5.footer {
+  background-color: #91c1c2;
+  border: 0;
+  font-size: 12.6px;
+  width: 100%;
+  color: #626262;
+  padding: 30px 15px 10px;
+  text-align: center;
+  margin: 0 auto 0;
+  height: 100%;
+}
+
+.sectionStyle6 {
+  background: #fff;
+  color: #000;
+}
+
+.mainWrap {
+  padding: 0 10px;
+  background-color: #ffffff;
+  min-height: 500px;
+}
+
+.mainWrapReg {
+  background-color: #fff;
+  border-radius: 0;
+  padding: 20px;
+  float: none;
+  clear: both;
+  min-height: 350px;
+}
+
+/* Button Styles */
+.button {
+  font-size: 18px;
+}
+
+.button2 {
+  -webkit-tap-highlight-color: transparent;
+  padding: 0 20px;
+  font-family: 'Lato', Arial, sans-serif;
+  border-color: #ff2939;
+  border-radius: 200px;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), 0 1px 2px rgba(0, 0, 0, 0.15);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), 0 1px 2px rgba(0, 0, 0, 0.15);
+  border-style: solid;
+  border-width: 1px;
+  line-height: 48px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff5c69), to(#ff2939));
+  background: -webkit-linear-gradient(#ff5c69, #ff2939);
+  background: linear-gradient(#ff5c69, #ff2939);
+  color: white;
+  background-color: #eeeeee;
+  font-weight: bold;
+  font-size: 19px;
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: .3s;
+  transition-duration: .3s;
+  min-width: 200px;
+  height: 50px;
+  margin: 16px auto 20px 2px;
+  position: relative;
+  width: 100%;
+}
+
+.button2 .fa {
+  position: absolute;
+  right: 19px;
+  top: 16px;
+  margin: auto -5px auto 5px;
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: 16px;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -webkit-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+
+.mainWrap a.button2.js-click-now {
+  color: #fff;
+}
+
+legend {
+  border-bottom: 0;
+}
+
+.postsurvey .mainWrap {
+  margin-bottom: 45px;
+}
+
+.postsurvey .thrive {
+  margin-bottom: 30px;
+}
+
+.postsurvey .thrive-image {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 700px;
+}
+
+.page-offers {
+  background: #ffffff;
+}
+
+/***********************************
+Media Styles Min-Width 350
+***********************************/
+@media (min-width: 350px) {
+  .button2 {
+    font-size: 21px;
+    min-width: 270px;
+  }
+  .button2 .fa {
+    font-size: 25.2px;
+    top: 11px;
+  }
+}
+
+/***********************************
+Media Styles Min-Width 600
+***********************************/
+@media (min-width: 600px) {
+  .sectionStyle6 {
+    background: #2e2e2e url(../../images/bg_tablet.jpg) top left;
+  }
+  .button {
+    font-size: 20px;
+  }
+  .button2 {
+    min-width: 435px;
+    height: 55px;
+    margin: 20px auto;
+    line-height: 56px;
+  }
+  .button2 .fa {
+    top: 16px;
+  }
+  .mainWrap {
+    border-radius: 10px;
+    margin-top: 25px;
+    padding: 25px 30px;
+  }
+  .dynamicImageContainer {
+    margin-bottom: 20px;
+  }
+  .mainWrapReg {
+    border-radius: 10px;
+    margin: 0 auto 20px;
+    min-height: 260px;
+  }
+}
+
+/***********************************
+Media Styles Min-Width 768
+***********************************/
+@media (min-width: 768px) {
+  .front-page header {
+    display: none;
+  }
+  .page-node-type-registration-page, .page-survey, .page-offers {
+    background: #2e2e2e url(../../images/bg_tablet.jpg) top left;
+  }
+  .page-survey .mainWrapReg {
+    min-height: 500px;
+  }
+  .container-custom {
+    width: 750px;
+  }
+  .button {
+    font-size: 24px;
+  }
+  .mainWrapReg {
+    margin-top: 120px;
+  }
+  .postsurvey .thrive {
+    margin: 0 15px 30px;
+  }
+}
+
+/***********************************
+Media Styles Min-Width 992
+***********************************/
+@media (min-width: 992px) {
+  body, .page-node-type-registration-page, .page-survey, .page-offers {
+    background: url(../../images/bg-grey.jpg) top left #eee;
+  }
+  .container-custom {
+    width: 970px;
+  }
+  .page-node-type-registration-page header, .page-survey header {
+    display: block;
+  }
+  .mainWrap {
+    margin-bottom: 250px;
+    padding: 20px;
+  }
+  .mainWrapReg {
+    border: 3px solid #ccc;
+    border-radius: 0;
+    padding: 20px 20px;
+    min-height: 425px;
+    float: left;
+    margin: 30px 0 0 0;
+    clear: none;
+  }
+  .sectionStyle4 {
+    min-height: 550px;
+    background: #682143 url(../../images/bg-purple-selfies.html) repeat top left scroll;
+  }
+  .sectionStyle5, .footer {
+    background: url(../../images/footer-border.png) repeat-x, url(../../images/dark-bkgd.jpg) 9px 0;
+  }
+  .sectionStyle6 {
+    overflow-x: hidden;
+    background: url(../../images/bg-grey.jpg) top left #eee;
+    height: 100%;
+  }
+}
+
+/***********************************
+Media Styles Min-Width 1200
+***********************************/
+@media (min-width: 1200px) {
+  .container-custom {
+    width: 1170px;
+  }
+}

@@ -1,0 +1,165 @@
+html {
+  text-align: center;
+  font-family: Georgia, "Times New Roman", serif;
+}
+.btn-switch1,
+.btn-switch2,
+.btn-switch3,
+.btn-switch4,
+.btn-switch5,
+.btn-switch6 {
+  font-size: 6em;
+	position: relative;
+	display: inline-block;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+.btn-switch1__radio,
+.btn-switch2__radio,
+.btn-switch3__radio,
+.btn-switch4__radio,
+.btn-switch5__radio,
+.btn-switch6__radio {
+	display: none;
+}
+.btn-switch1__label,
+.btn-switch2__label,
+.btn-switch3__label,
+.btn-switch4__label,
+.btn-switch5__label,
+.btn-switch6__label {
+	display: inline-block;
+	padding: .75em .5em .75em .75em;
+	vertical-align: top;
+	font-size: 1em;
+	font-weight: 700;
+	line-height: 1.5;
+	color: #666;
+  cursor: pointer;
+	transition: color .2s ease-in-out;
+}
+.btn-switch1__label + .btn-switch1__label,
+.btn-switch2__label + .btn-switch2__label,
+.btn-switch3__label + .btn-switch3__label,
+.btn-switch4__label + .btn-switch4__label,
+.btn-switch5__label + .btn-switch5__label,
+.btn-switch6__label + .btn-switch6__label {
+  padding-right: .75em;
+	padding-left: 0;
+}
+.btn-switch1__txt,
+.btn-switch2__txt,
+.btn-switch3__txt,
+.btn-switch4__txt,
+.btn-switch5__txt,
+.btn-switch6__txt {
+	position: relative;
+	z-index: 2;
+  display: inline-block;
+   min-width: 1.5em;
+	opacity: 1;
+	pointer-events: none;
+	transition: opacity .2s ease-in-out;
+}
+.btn-switch1__radio_no1:checked ~ .btn-switch1__label_yes1 .btn-switch1__txt,
+.btn-switch1__radio_yes1:checked ~ .btn-switch1__label_no1 .btn-switch1__txt,
+.btn-switch2__radio_no2:checked ~ .btn-switch2__label_yes2 .btn-switch2__txt,
+.btn-switch2__radio_yes2:checked ~ .btn-switch2__label_no2 .btn-switch2__txt,
+.btn-switch3__radio_no3:checked ~ .btn-switch3__label_yes3 .btn-switch3__txt,
+.btn-switch3__radio_yes3:checked ~ .btn-switch3__label_no3 .btn-switch3__txt,
+.btn-switch4__radio_no4:checked ~ .btn-switch4__label_yes4 .btn-switch4__txt,
+.btn-switch4__radio_yes4:checked ~ .btn-switch4__label_no4 .btn-switch4__txt,
+.btn-switch5__radio_no5:checked ~ .btn-switch5__label_yes5 .btn-switch5__txt,
+.btn-switch5__radio_yes5:checked ~ .btn-switch5__label_no5 .btn-switch5__txt,
+.btn-switch6__radio_no6:checked ~ .btn-switch6__label_yes6 .btn-switch6__txt,
+.btn-switch6__radio_yes6:checked ~ .btn-switch6__label_no6 .btn-switch6__txt {
+	opacity: 0;
+}
+.btn-switch1__label:before,
+.btn-switch2__label:before,
+.btn-switch3__label:before,
+.btn-switch4__label:before,
+.btn-switch5__label:before,
+.btn-switch6__label:before {
+	content: "";
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: #f0f0f0;
+	border-radius: 1.5em;
+	box-shadow: inset 0 .0715em .3572em rgba(43,43,43,.05);
+	transition: background .2s ease-in-out;
+}
+.btn-switch1__radio_yes1:checked ~ .btn-switch1__label:before,
+.btn-switch2__radio_yes2:checked ~ .btn-switch2__label:before,
+.btn-switch3__radio_yes3:checked ~ .btn-switch3__label:before,
+.btn-switch4__radio_yes4:checked ~ .btn-switch4__label:before,
+.btn-switch5__radio_yes5:checked ~ .btn-switch5__label:before,
+.btn-switch6__radio_yes6:checked ~ .btn-switch6__label:before {
+	background: #6ad500;
+}
+.btn-switch1__label_no1:after,
+.btn-switch2__label_no2:after,
+.btn-switch3__label_no3:after,
+.btn-switch4__label_no4:after,
+.btn-switch5__label_no5:after,
+.btn-switch6__label_no6:after {
+	content: "";
+	position: absolute;
+	z-index: 2;
+	top: .5em;
+	bottom: .5em;
+	left: .5em;
+	width: 2em;
+	background: #fff;
+	border-radius: 1em;
+	pointer-events: none;
+	box-shadow: 0 .1429em .2143em rgba(43,43,43,.2), 0 .3572em .3572em rgba(43,43,43,.1);
+	transition: left .2s ease-in-out, background .2s ease-in-out;
+}
+.btn-switch1__radio_yes1:checked ~ .btn-switch1__label_no1:after,
+.btn-switch2__radio_yes2:checked ~ .btn-switch2__label_no2:after,
+.btn-switch3__radio_yes3:checked ~ .btn-switch3__label_no3:after,
+.btn-switch4__radio_yes4:checked ~ .btn-switch4__label_no4:after,
+.btn-switch5__radio_yes5:checked ~ .btn-switch5__label_no5:after,
+.btn-switch6__radio_yes6:checked ~ .btn-switch6__label_no6:after {
+	left: calc(100% - 2.5em);
+	background: #fff;
+}
+.btn-switch1__radio_no1:checked ~ .btn-switch1__label_yes1:before,
+.btn-switch1__radio_yes1:checked ~ .btn-switch1__label_no1:before,
+.btn-switch2__radio_no2:checked ~ .btn-switch2__label_yes2:before,
+.btn-switch2__radio_yes2:checked ~ .btn-switch2__label_no2:before,
+.btn-switch3__radio_no3:checked ~ .btn-switch3__label_yes3:before,
+.btn-switch3__radio_yes3:checked ~ .btn-switch3__label_no3:before,
+.btn-switch4__radio_no4:checked ~ .btn-switch4__label_yes4:before,
+.btn-switch4__radio_yes4:checked ~ .btn-switch4__label_no4:before,
+.btn-switch5__radio_no5:checked ~ .btn-switch5__label_yes5:before,
+.btn-switch5__radio_yes5:checked ~ .btn-switch5__label_no5:before,
+.btn-switch6__radio_no6:checked ~ .btn-switch6__label_yes6:before,
+.btn-switch6__radio_yes6:checked ~ .btn-switch6__label_no6:before {
+	z-index: 1;
+}
+.btn-switch1__radio_yes1:checked ~ .btn-switch1__label_yes1,
+.btn-switch2__radio_yes2:checked ~ .btn-switch2__label_yes2,
+.btn-switch3__radio_yes3:checked ~ .btn-switch3__label_yes3,
+.btn-switch4__radio_yes4:checked ~ .btn-switch4__label_yes4,
+.btn-switch5__radio_yes5:checked ~ .btn-switch5__label_yes5,
+.btn-switch6__radio_yes6:checked ~ .btn-switch6__label_yes6 {
+	color: #fff;
+}
+
+button.submit {
+  background: #6ad500;
+  border-radius: 10px;
+  width: 200px;
+  font-size: 20px;
+  height: 50px;
+  display: none;
+  text-transform: uppercase;
+}

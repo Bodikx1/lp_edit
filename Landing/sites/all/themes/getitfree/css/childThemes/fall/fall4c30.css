@@ -1,0 +1,467 @@
+body {
+  background: url(../../../images/fall/bg-tan.jpg) 9px 0;
+  margin: 0;
+}
+
+.path-frontpage, .page-node-type-registration-page, .sectionStyle6 {
+  background: #ffffff;
+}
+
+.sectionStyle5.footer {
+  background: url(../../../images/fall/footer-border-fall.jpg) repeat-x, url(../../../images/fall/dark-bkgd-fall.jpg) 9px 0;
+}
+
+header {
+  background-color: #bf8f17;
+}
+
+.headlineGroup.headlineGroup-splash .headline,
+.headline-offer,
+.headline-postsurvey {
+  color: #693602;
+}
+
+.mainWrap {
+  padding: 0 10px;
+  background-color: #ffffff;
+  min-height: 500px;
+}
+
+.mainWrapReg {
+  background-color: #fff;
+  border-radius: 0;
+  padding: 20px;
+  float: none;
+  clear: both;
+}
+
+.mainWrap-offer {
+  padding: 20px;
+  margin: 20px auto 20px;
+}
+
+.mainWrap-offer:before {
+  background-image: url(../../../images/fall/gold-ribbon-badge.png);
+  background-size: 290px 37px;
+  background-repeat: no-repeat;
+  left: 50%;
+  margin-left: -147px;
+  position: absolute;
+  width: 300px;
+  content: "";
+  height: 95px;
+  top: -30px;
+  z-index: 30;
+}
+
+.postsurvey .mainWrap {
+  margin: 0 auto;
+  float: none;
+  background: none;
+  border: none;
+}
+
+.headline-offer,
+.headline-postsurvey,
+.headline-survey {
+  color: #693602;
+}
+
+.headline-postsurvey {
+  padding-top: 20px;
+}
+
+.headline-wrap .headline {
+  color: #693602;
+}
+
+/******** Button Styles *********/
+.button {
+  background: #029f0b;
+}
+
+.button:focus, .button:active, .button:hover {
+  background: #004831 !important;
+}
+
+.button:focus .button_icon, .button:active .button_icon, .button:hover .button_icon {
+  background: #002a1d;
+}
+
+.button .button_icon {
+  background: #014c05;
+}
+
+form .button {
+  background: #029f0b;
+}
+
+form .button:focus, form .button:active, form .button:hover {
+  background: #004831 !important;
+}
+
+form .button:focus .button_icon, form .button:active .button_icon, form .button:hover .button_icon {
+  background: #002a1d;
+}
+
+form .button .button_icon {
+  background: #014c05;
+}
+
+/********* Dynamic Hero *********/
+.dynamicHero {
+  background: url(../../../blocks/dynamic-hero/images/bg-brown-selfies.jpg) repeat top left scroll;
+}
+
+.dynamicHero:before {
+  background: url(../../../blocks/dynamic-hero/images/splash-badge1-fall.png) no-repeat;
+}
+
+.dynamicHero .bgColor {
+  background: #bf8f17;
+}
+
+.dynamicHero .button-cta {
+  background: url(../../../images/fall/btn-green.png) no-repeat left bottom;
+  background-size: 100%;
+}
+
+.headline-wrap .headline {
+  color: #693602;
+}
+
+/********* Dynamic Grid *********/
+.dynProductGrid .views-col h2 {
+  color: #ce6903;
+  font-weight: 700;
+}
+
+.dynProductGrid .views-col h3 {
+  color: #bf8f17;
+}
+
+.dynProductGrid .views-col .button {
+  border: 1px solid #029f0b;
+  border-radius: 200px;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), 0 1px 2px rgba(0, 0, 0, 0.15) !important;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), 0 1px 2px rgba(0, 0, 0, 0.15) !important;
+  line-height: 38px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#0bc316), to(#029f0b));
+  background: -webkit-linear-gradient(#0bc316, #029f0b);
+  background: linear-gradient(#0bc316, #029f0b);
+  -webkit-transition: none;
+}
+
+.dynProductGrid .views-col .button:focus, .dynProductGrid .views-col .button:active, .dynProductGrid .views-col .button:hover {
+  outline: none;
+  background: #029f0b !important;
+}
+
+.dynProductGrid .views-col .button:focus .button_icon, .dynProductGrid .views-col .button:active .button_icon, .dynProductGrid .views-col .button:hover .button_icon {
+  background: #002a1d !important;
+}
+
+.dynProductGrid .views-col .button #edit-submit {
+  background-color: #029f0b;
+  border: 0;
+}
+
+.dynProductGrid .views-col .button_icon {
+  background: #014c05 !important;
+  border-radius: 50%;
+  line-height: 2;
+  -webkit-box-shadow: 0 0 5px #234c24 inset;
+  box-shadow: 0 0 5px #113811 inset;
+}
+
+/********* Dynamic Image *********/
+.dynamicImage .views-col h2 {
+  color: #ce6903;
+  font-weight: 700;
+}
+
+.dynamicImage .views-col h3 {
+  color: #bf8f17;
+}
+
+.dynamicImage .views-field-title h1 {
+  color: #693602;
+}
+
+.dynamicImage .views-field-title .highlight {
+  color: #bf8f17;
+}
+
+.dynamicImage .views-field-title p:last-child {
+  color: #626262;
+}
+
+/* SOI and CoReg */
+.path-survey-offer-inputs label[for$='-yes'] {
+  background: #ce6903;
+  color: #fff;
+}
+
+.path-survey-offer-inputs label {
+  color: #fff;
+}
+
+/********* Registration Page *********/
+form .headline {
+  color: #693602;
+  font: bold 16.8px/1 'Lato', Arial, sans-serif;
+  margin: 0 0 20px;
+}
+
+form label {
+  color: #bf8f17;
+}
+
+form label.error {
+  color: red;
+}
+
+form .error.form-text, form .error.form-email, form .error.form-date, form .error.form-select, form .error.form-tel {
+  border: 1px solid red;
+}
+
+form .form-text, form .form-text, form .form-email, form .select, form .form-date, form .form-tel {
+  background: #fffdee;
+  color: #626262;
+  font-weight: bold;
+  display: block;
+  width: 100%;
+  height: 34px;
+  padding: 6px 12px;
+  border: 1px solid #f0d07f;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 0 5px 2px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 0 5px 2px rgba(0, 0, 0, 0.05);
+}
+
+form .button {
+  background: #029f0b;
+  border: none;
+}
+
+form .button:focus, form .button:active, form .button:hover {
+  background: #004831;
+}
+
+form .js-Offer_button-skip {
+  color: #bf8f17;
+}
+
+.cardWrap .button-submit {
+  border: 1px solid #029f0b;
+  border-radius: 200px;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), 0 1px 2px rgba(0, 0, 0, 0.15);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), 0 1px 2px rgba(0, 0, 0, 0.15);
+  line-height: 38px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#0bc316), to(#029f0b));
+  background: -webkit-linear-gradient(#0bc316, #029f0b);
+  background: linear-gradient(#0bc316, #029f0b);
+  -webkit-transition: none;
+}
+
+.cardWrap .button-submit:focus, .cardWrap .button-submit:active, .cardWrap .button-submit:hover {
+  outline: none;
+  background: #029f0b;
+  border: none;
+}
+
+.page-match .field_headline {
+  color: #693602;
+}
+
+.progress-bar-info {
+  background-color: #ce6903;
+}
+
+@media (min-width: 768px) {
+  body, .path-frontpage, .page-node-type-registration-page, .page-survey, .page-signup, .sectionStyle6 {
+    background: url(../../../images/bg_tablet.jpg) 9px 0;
+  }
+  body .fall, .path-frontpage .fall, .page-node-type-registration-page .fall, .page-survey .fall, .page-signup .fall, .sectionStyle6 .fall {
+    background: url(../../../../getitfreefall/images/bg-tan.jpg) 9px 0;
+  }
+  .postsurvey .mainWrap {
+    padding-bottom: 20px;
+    background-color: #fff;
+    margin: 20px 0 40px;
+  }
+  .front-page header {
+    display: none;
+  }
+  .mainWrap-offer {
+    margin: 29px auto 20px;
+    padding: 37px 20px 20px;
+  }
+  .mainWrap-offer:before {
+    background-size: 555px 66px;
+    margin-left: -275px;
+    width: 590px;
+    top: -35px;
+  }
+  .mainWrapReg {
+    border-radius: 10px;
+  }
+  form .headline {
+    font-size: 26px;
+  }
+  form .button, form .button-submit {
+    font-size: 38px;
+    width: 120%;
+    left: -10%;
+    margin: 0;
+    height: 100px;
+    line-height: 2.5;
+    bottom: -55px;
+    font-weight: 900;
+    max-width: 780px;
+  }
+  form .button_icon {
+    width: 50px;
+    height: 50px;
+    top: 25px;
+  }
+  form .button_icon .fa {
+    font-size: 1.75rem;
+    position: absolute;
+    right: 7px;
+    top: 9px;
+  }
+}
+
+@media (min-width: 992px) {
+  body, .path-frontpage, .page-node-type-registration-page, .page-survey, .page-signup, .page-match, .page-offers, .sectionStyle6 {
+    background: url(../../../images/fall/bg-tan.jpg) 9px 0 !important;
+  }
+  .cart-image {
+    background: url(../../../images/fall/cart-fall-one.png) no-repeat;
+  }
+  .dynamicImage {
+    -webkit-box-shadow: 1px 1px 3px 2px #eadbb4;
+    box-shadow: 1px 1px 3px 2px #eadbb4;
+  }
+  .dynamicImage:after {
+    content: "";
+    position: absolute;
+    -webkit-transform: rotate(134deg);
+    -ms-transform: rotate(134deg);
+    transform: rotate(134deg);
+    width: 33px;
+    z-index: -1;
+    top: -18px;
+    left: 103.5px;
+    left: -webkit-calc(50% - 33px);
+    left: calc(50% - 33px);
+    border: 33px solid #fff;
+    -webkit-box-shadow: 1px -1px 4px 3px #eadbb4;
+    box-shadow: 1px -1px 4px 3px #eadbb4;
+  }
+  .dynamicImage .views-field-title .highlight {
+    color: #bf8f17 !important;
+  }
+  form .button, form .button:visited, form .button-submit {
+    text-transform: uppercase;
+    -webkit-box-shadow: inset -5px -8px 5px 0 rgba(0, 0, 0, 0.16), inset 5px 8px 5px 0 rgba(255, 255, 255, 0.16);
+    box-shadow: inset -5px -8px 5px 0 rgba(0, 0, 0, 0.16), inset 5px 8px 5px 0 rgba(255, 255, 255, 0.16);
+    border-radius: 10px;
+    border: none;
+    max-width: 460px;
+    line-height: 70px;
+    height: 70px;
+    background: #029f0b;
+    font-weight: initial;
+    text-shadow: 3px 0 1px rgba(0, 0, 0, 0.5);
+    left: 0;
+    bottom: 0;
+    font-size: 24px;
+    width: 100%;
+  }
+  form .button:hover, form .button:active, form .button:focus, form .button:visited:hover, form .button:visited:active, form .button:visited:focus, form .button-submit:hover, form .button-submit:active, form .button-submit:focus {
+    -webkit-box-shadow: inset -5px -8px 5px 0 rgba(0, 0, 0, 0.16), inset 5px 8px 5px 0 rgba(255, 255, 255, 0.16);
+    box-shadow: inset -5px -8px 5px 0 rgba(0, 0, 0, 0.16), inset 5px 8px 5px 0 rgba(255, 255, 255, 0.16);
+    background: #004831;
+  }
+  form #edit-submit {
+    background-color: #e34842;
+    text-transform: uppercase;
+  }
+  form #edit-submit:active, form #edit-submit:hover, form #edit-submit:focus {
+    background-color: #a2312c;
+  }
+  form .button_icon {
+    display: none;
+  }
+  .dynamicHero {
+    background: url(../../../blocks/dynamic-hero/images/bg-brown-selfies.jpg) repeat top left scroll;
+  }
+  .dynamicHero:before {
+    background: url(../../../blocks/dynamic-hero/images/splash-badge1-fall.png) no-repeat;
+  }
+  .dynamicHero .bgColor {
+    background: #bf8f17;
+  }
+  .dynamicHero .button-cta {
+    background: url(../../../images/fall/btn-green.png) no-repeat left bottom;
+  }
+  .dynamicHero .button-cta:hover {
+    background: url(../../../images/fall/btn-green.png) no-repeat left top;
+  }
+  .cardWrap .button-submit {
+    text-transform: uppercase;
+    -webkit-box-shadow: inset -5px -8px 5px 0 rgba(0, 0, 0, 0.16), inset 5px 8px 5px 0 rgba(255, 255, 255, 0.16);
+    box-shadow: inset -5px -8px 5px 0 rgba(0, 0, 0, 0.16), inset 5px 8px 5px 0 rgba(255, 255, 255, 0.16);
+    border-radius: 10px;
+    border: none;
+    max-width: 460px;
+    line-height: 70px;
+    height: 70px;
+    font-weight: initial;
+    text-shadow: 3px 0 1px rgba(0, 0, 0, 0.5);
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: #029f0b;
+  }
+  .cardWrap .button-submit:hover, .cardWrap .button-submit:active, .cardWrap .button-submit:focus {
+    -webkit-box-shadow: inset -5px -8px 5px 0 rgba(0, 0, 0, 0.16), inset 5px 8px 5px 0 rgba(255, 255, 255, 0.16);
+    box-shadow: inset -5px -8px 5px 0 rgba(0, 0, 0, 0.16), inset 5px 8px 5px 0 rgba(255, 255, 255, 0.16);
+    background: #004831;
+  }
+  .headline-wrap .headline {
+    color: #693602;
+  }
+  .postsurvey .mainWrap {
+    background: none;
+    margin: 0 auto;
+    padding-top: 0;
+  }
+  .page-match .mainWrap {
+    border-radius: 10px;
+    border: 0;
+    float: none;
+    padding-bottom: 20px;
+    min-height: 500px;
+  }
+  .mainWrap, .mainWrapReg {
+    border: 3px solid #eadbb4;
+    border-radius: 0;
+    padding: 20px 20px;
+    min-height: 425px;
+    float: left;
+    margin: 30px 0 0 0;
+    clear: none;
+  }
+  .mainWrap-offer {
+    margin: 0 auto;
+    background: none;
+    border: 0;
+    float: none;
+  }
+  .registration_page .mainWrap, .registration_page .mainWrapReg {
+    border: 3px solid #eadbb4;
+  }
+}

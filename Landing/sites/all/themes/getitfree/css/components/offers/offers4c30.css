@@ -1,0 +1,135 @@
+.mainWrap-offer {
+  padding-top: 40px;
+  position: relative;
+  margin-bottom: 45px;
+}
+
+.mainWrap-offer:before {
+  background-image: url(../../../images/gold-ribbon-badge.png);
+  background-size: 290px 37px;
+  background-repeat: no-repeat;
+  left: 50%;
+  margin-left: -147px;
+  position: absolute;
+  width: 300px;
+  content: "";
+  height: 95px;
+  top: -9px;
+  z-index: 30;
+}
+
+.linkoutOffer_image {
+  margin: 0 auto 20px;
+}
+
+.js-Offer_button-skip {
+  display: block;
+  text-align: center;
+  font-size: 12px;
+  text-decoration: none;
+  color: #9c9c9c;
+}
+
+.headline-offer {
+  text-align: center;
+  margin: 7px 0 11px;
+  font-weight: 700;
+  font-size: 18.2px;
+  line-height: 22px;
+  letter-spacing: .01em;
+  color: #ad4279;
+}
+
+.subheadline-offer {
+  text-align: center;
+  padding: 0 10px;
+  font-size: 15px;
+  line-height: 1.2;
+}
+
+.headline-postsurvey {
+  text-align: center;
+  font-size: 18px;
+  margin: 10px 0 20px;
+}
+
+.premiumPlacementWrap {
+  text-align: center;
+}
+
+.premiumPlacementWrap a img {
+  width: 100%;
+  height: auto;
+  max-width: 400px;
+}
+
+@media (min-width: 600px) {
+  .mainWrap-offer:before {
+    background-size: 555px 66px;
+    margin-left: -275px;
+    width: 590px;
+    top: -30px;
+  }
+  .premiumPlacementWrap a img {
+    width: 100%;
+    height: auto;
+    max-width: 500px;
+  }
+  .headline-offer {
+    font-size: 26px;
+  }
+  .subheadline-offer {
+    font-size: 21px;
+  }
+}
+
+@media (min-width: 992px) {
+  .headline-offer, .headline-postsurvey {
+    font-size: 28px;
+    padding-bottom: 20px;
+  }
+  .subheadline-offer {
+    display: none;
+  }
+  .mainWrap-offer {
+    padding-top: 0;
+    background-color: initial;
+  }
+  .mainWrap-offer:before {
+    display: none;
+  }
+  .premiumPlacementWrap a img {
+    width: 100%;
+    height: auto;
+    max-width: 700px;
+  }
+  .premiumPlacementWrap:before {
+    content: "";
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: 130px 310px;
+    background-image: url(../../../images/gold-badge.gif);
+    height: 259px;
+    width: 181px;
+    left: -101px;
+    top: 125px;
+  }
+  .mainWrap a.button2.js-click-now {
+    color: #fff;
+    display: none;
+  }
+}
+
+@media (min-width: 1200px) {
+  .premiumPlacementWrap:before {
+    content: "";
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: 130px 310px;
+    background-image: url(../../../images/gold-badge.gif);
+    height: 259px;
+    width: 181px;
+    left: -121px;
+    top: 125px;
+  }
+}

@@ -1,0 +1,52 @@
+/********* Splash Page *********/
+.splash .headline {
+  margin-top: 20px;
+  color: #922d60;
+  font: italic 27px/1 'Lato', Arial, sans-serif;
+  line-height: 1;
+  letter-spacing: .15px;
+  font-weight: normal;
+  text-align: center;
+}
+
+.splash .subheadline {
+  color: #2e2e2e;
+  font-style: italic;
+  margin: 6px 0 10px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 1;
+  white-space: normal;
+}
+
+/********* Survey Page *********/
+.page-survey .headline {
+  font-weight: 700;
+  font-size: 18.2px;
+  line-height: 22px;
+  letter-spacing: .01em;
+  color: #ad4279;
+  margin: 0 0 5px;
+}
+
+.page-survey .subheadline {
+  margin: 0 0 5px;
+  font-weight: 400;
+  font-size: 16.1px;
+  line-height: 1.3;
+  color: #666;
+}
+
+/***********************************
+Media Styles Min-Width 900
+***********************************/
+@media (min-width: 900px) {
+  .splash .headline {
+    font-size: 40px;
+    line-height: 55px;
+  }
+  .splash .subheadline {
+    margin: 6px 0 15px;
+    font-size: 25px;
+  }
+}
