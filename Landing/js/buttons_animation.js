@@ -1,7 +1,7 @@
 $(function() {
 
   $('a.popunder.button-cta.js-nextpage-uf').click(function(){
-     $('html, body').animate({scrollTop: 913},1500);
+     $('html, body').animate({scrollTop:$('.headline-wrap').offset().top - 20},1500);
   });
 
   $('input').prop({'checked': true});
@@ -18,6 +18,10 @@ $(function() {
     counter++;
     if(counter>3){
       button.fadeIn(3000);
+    };
+    if(counter===4){
+      var currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+      $('html, body').animate({scrollTop: currentScroll + 200},1000);
     }
   });
 
@@ -29,6 +33,10 @@ $(function() {
         button.hide(3000);
       }
     };
+    if(counter===3){
+      var currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+      $('html, body').animate({scrollTop: currentScroll - 200},1000);
+    }
   });
 
 });
